@@ -1,0 +1,11 @@
+eclipse {
+	project {
+		name = 'dog-provision'
+		comment = 'Dog information DB initialization and tenant provision'
+	}
+
+	classpath {
+		downloadSources = true
+		downloadJavadoc = true
+	}
+}

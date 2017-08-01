@@ -1,0 +1,7 @@
+include 'dog-provision', 'dog-web'
+logger.quiet "include dog-provision"
+project(':dog-provision').projectDir = new File(settingsDir, './dog-provision')
+logger.quiet "dog-provision projectDir " + project(':dog-provision').projectDir
+logger.quiet "include dog-web"
+project(':dog-web').projectDir = new File(settingsDir, './dog-web')
+logger.quiet "dog-web projectDir " + project(':dog-web').projectDir
