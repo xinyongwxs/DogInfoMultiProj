@@ -50,6 +50,10 @@ dependencies {
         [group: 'org.springframework', name: 'spring-context', version: '4.3.10.RELEASE'],
         [group: 'javax.servlet', name: 'servlet-api', version: '3.0-alpha-1'],
         [group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '2.1.3.RELEASE'],
-        [group: 'javax.persistence', name: 'persistence-api', version: '1.0.2']
+        [group: 'javax.persistence', name: 'persistence-api', version: '1.0.2'],
+        [group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.11.6.RELEASE'],
+        [group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.10.Final'],
+        [group: 'org.apache.olingo', name: 'olingo-odata2-core', version: '2.0.9'],
+        [group: 'org.apache.olingo', name: 'olingo-odata2-api', version: '2.0.9']
     )
 }

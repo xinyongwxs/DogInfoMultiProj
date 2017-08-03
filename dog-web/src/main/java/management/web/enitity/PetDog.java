@@ -1,5 +1,13 @@
 package management.web.enitity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity  
+@Table(name = "petdog")  
+@PrimaryKeyJoinColumn(name = "id") 
 public class PetDog extends Dog {
 	public int getTrainingLevel() {
 		return trainingLevel;
@@ -43,11 +51,25 @@ public class PetDog extends Dog {
 	public void setBreeder(String breeder) {
 		this.breeder = breeder;
 	}
+	
+	@Column(name = "traininglevel")
 	private int trainingLevel;
+	
+	@Column(name = "trainer")
 	private String trainer;
+	
+	@Column(name = "apperance")
 	private String apperance;
+	
+	@Column(name = "readyforsell")
 	private int readyForSell;
+	
+	@Column(name = "price")
 	private float price;
+	
+	@Column(name = "category")
 	private String category;
+	
+	@Column(name = "breeder")
 	private String breeder;
 }

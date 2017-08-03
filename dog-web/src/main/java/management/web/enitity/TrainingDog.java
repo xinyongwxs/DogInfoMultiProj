@@ -2,6 +2,14 @@ package management.web.enitity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity  
+@Table(name = "trainingdog")  
+@PrimaryKeyJoinColumn(name = "id") 
 public class TrainingDog extends Dog {
 	public String getOwnerPhone() {
 		return ownerPhone;
@@ -39,10 +47,22 @@ public class TrainingDog extends Dog {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	
+	@Column(name = "ownerphone")
 	private String ownerPhone;
+	
+	@Column(name = "courses")
 	private String courses;
+	
+	@Column(name = "startdate")
 	private Date startDate;
+	
+	@Column(name = "enddate")
 	private Date endDate;
+	
+	@Column(name = "ownerid")
 	private String ownerId;
+	
+	@Column(name = "gender")
 	private String gender;
 }

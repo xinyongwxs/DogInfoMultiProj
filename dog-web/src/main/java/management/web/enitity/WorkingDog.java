@@ -1,5 +1,13 @@
 package management.web.enitity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity  
+@Table(name = "workingdog")  
+@PrimaryKeyJoinColumn(name = "id") 
 public class WorkingDog extends Dog {
 	public int getTrainingLevel() {
 		return trainingLevel;
@@ -31,9 +39,19 @@ public class WorkingDog extends Dog {
 	public void setCategory(String category) {
 		this.category = category;
 	}
+	
+	@Column(name = "traininglevel")
 	private int trainingLevel;
+	
+	@Column(name = "trainer")
 	private String trainer;
+	
+	@Column(name = "readyforworking")
 	private int readyForWorking;
+	
+	@Column(name = "price")
 	private float price;
+	
+	@Column(name = "category")
 	private String category;
 }

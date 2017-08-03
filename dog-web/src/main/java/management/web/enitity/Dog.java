@@ -2,11 +2,23 @@ package management.web.enitity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
+
+@Entity  
+@Inheritance(strategy = InheritanceType.JOINED)
+@Table(name = "DOG")
 public class Dog {
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -63,14 +75,36 @@ public class Dog {
 	public void setType(String type) {
 		this.type = type;
 	}
-	private String id;
+	
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "birthday")
 	private Date birthday;
+	
+	@Column(name = "kennelid")
 	private String kennelId;
+	
+	@Column(name = "epdate")
 	private Date epDate;
+	
+	@Column(name = "chipid")
 	private String chipId;
+	
+	@Column(name = "earid")
 	private String earId;
+	
+	@Column(name = "companycode")
 	private String companyCode;
+	
+	@Column(name = "remarks")
 	private String remarks;
+	
+	@Column(name = "type")
 	private String type;
 }
