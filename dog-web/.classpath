@@ -5,15 +5,9 @@
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-core/2.0.9/81251e96a51e57c50275e61d2baabd668c3976cf/olingo-odata2-core-2.0.9-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-core/2.0.9/4fab168ed53e7398a3c8b84c66c58d0e3ff07b0c/olingo-odata2-core-2.0.9.jar">
+	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.5/1100638866461d41fbed0e89d722b161c579fe23/commons-codec-1.5-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.5/cf993e250ff71804754ec2734a16f23c0be99f70/commons-codec-1.5.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-core/2.0.9/5637fa148542f20b24960855e1d039418195c994/olingo-odata2-core-2.0.9-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/3c2c41ec5e3ca4131f83cf611f5fd837892220bd/commons-codec-1.6-javadoc.jar!/"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.5/d722a84cf737fe479c0844f1dabb4e3e6222d2f7/commons-codec-1.5-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -107,19 +101,13 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0.2/eb8ae77be88577b23e64ce1e5386e874b08b49cc/persistence-api-1.0.2-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0.2/8a7f96961047da52a53b7347b6a919c6fbc6d7fa/persistence-api-1.0.2.jar">
+	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.eclipse.persistence/javax.persistence/2.1.0/da95a959929234c57b988644696c065d79774fc4/javax.persistence-2.1.0-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.eclipse.persistence/javax.persistence/2.1.0/5bab675816dbe0f64bb86004b108bf2a00292358/javax.persistence-2.1.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.2.10.Final/23b8bbd06d5fef15e05924e326913d115ad1e41f/hibernate-entitymanager-5.2.10.Final-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.2.10.Final/a435ebec067b792b641961fd3b3cf15d59e82dd3/hibernate-entitymanager-5.2.10.Final.jar">
 		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-api/2.0.9/f68de7ca48a617ea985c2b7236f4990ab9280585/olingo-odata2-api-2.0.9-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-api/2.0.9/e02a056d68cabcc9f0adeaf642d48b793c07c27c/olingo-odata2-api-2.0.9.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.apache.olingo/olingo-odata2-api/2.0.9/12ff1f7bf6d09673420936dc81b6dcfbd5ab390a/olingo-odata2-api-2.0.9-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
@@ -195,18 +183,6 @@
 	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/2d0cb1e79e030277b094ef55fcfb97fd0443ee43/jboss-transaction-api_1.2_spec-1.0.1.Final-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/4441f144a2a1f46ed48fcc6b476a4b6295e6d524/jboss-transaction-api_1.2_spec-1.0.1.Final.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/936f2fff97e428689867eecfb52d2225641bd653/jboss-transaction-api_1.2_spec-1.0.1.Final-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0-m10/63116d0a7e86b9c8c8aade325d98ce23cac16015/javax.ws.rs-api-2.0-m10-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0-m10/74705b1b0c448f88cff1a46f431b70b23588e8f4/javax.ws.rs-api-2.0-m10.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0-m10/28620e3d0262f2932067c32896c57075fd3da986/javax.ws.rs-api-2.0-m10-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/b98251e078d1809f889324fe90dbc4996919c02a/gson-2.4-sources.jar" kind="lib" path="C:/Users/I306365/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/I306365/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/164663a6a9236d20258dbc337f0a4106960a690/gson-2.4-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
