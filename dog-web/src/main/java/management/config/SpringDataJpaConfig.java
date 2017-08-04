@@ -14,9 +14,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.Database;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
-@EnableJpaRepositories("management.web.repository")
+@EnableJpaRepositories("management.web")
 @PropertySource("classpath:application.properties")
 public class SpringDataJpaConfig {
     private static final String PROPERTY_NAME_DATABASE_DRIVER = "db.driver";
@@ -32,7 +34,8 @@ public class SpringDataJpaConfig {
     @Bean
     public DataSource dataSource() {
     	DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
+    	String databaseDriver = env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER);
+        dataSource.setDriverClassName(databaseDriver);
         dataSource.setUrl(env.getRequiredProperty(PROPERTY_NAME_DATABASE_URL));
         dataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DATABASE_USERNAME));
         dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
@@ -54,6 +57,15 @@ public class SpringDataJpaConfig {
         entityManagerFactoryBean.setPackagesToScan(env.getRequiredProperty(PROPERTY_NAME_ENTITYMANAGER_PACKAGES_TO_SCAN));
         entityManagerFactoryBean.setJpaProperties(hibProperties());
         return entityManagerFactoryBean;
+    }
+    
+    @Bean
+    public HibernateJpaVendorAdapter jpaVendorAdapter() {
+    	HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+    	adapter.setDatabase(Database.MYSQL);
+    	adapter.setShowSql(true);
+    	adapter.setGenerateDdl(true);
+    	return adapter;
     }
     
 

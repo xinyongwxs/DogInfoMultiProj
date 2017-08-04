@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import management.web.enitity.BreedingDog;
+import management.web.model.DogFilterModel;
 import management.web.services.impl.BreedingDogServiceImpl;
 
 
@@ -41,5 +42,12 @@ public class BreedingDogController {
 	@RequestMapping(method = RequestMethod.PUT)
 	public void updateDog(@RequestBody Map<String, Object> dogProps) {
 		breedingDogService.UpdateDogs(dogProps);
+	}
+	
+	@RequestMapping(value = "/filtered", method = RequestMethod.POST)
+	public @ResponseBody List<BreedingDog> getAllByFilter(@RequestBody DogFilterModel filterObj) {
+		List<BreedingDog> result = breedingDogService.getAllByFilter(filterObj.getLimit(), 
+				filterObj.getOffset(), filterObj.getFilter(), filterObj.getOrderByName(), filterObj.getSortMethod());
+		return result;
 	}
 }
