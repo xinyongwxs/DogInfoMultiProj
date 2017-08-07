@@ -27,10 +27,10 @@ public class PetDog extends Dog {
 	public void setApperance(String apperance) {
 		this.apperance = apperance;
 	}
-	public int getReadyForSell() {
+	public boolean getReadyForSell() {
 		return readyForSell;
 	}
-	public void setReadyForSell(int readyForSell) {
+	public void setReadyForSell(boolean readyForSell) {
 		this.readyForSell = readyForSell;
 	}
 	public float getPrice() {
@@ -62,7 +62,7 @@ public class PetDog extends Dog {
 	private String apperance;
 	
 	@Column(name = "readyforsell")
-	private int readyForSell;
+	private boolean readyForSell;
 	
 	@Column(name = "price")
 	private float price;

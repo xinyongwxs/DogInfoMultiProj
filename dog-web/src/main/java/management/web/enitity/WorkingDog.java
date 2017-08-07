@@ -21,10 +21,10 @@ public class WorkingDog extends Dog {
 	public void setTrainer(String trainer) {
 		this.trainer = trainer;
 	}
-	public int getReadyForWorking() {
+	public boolean getReadyForWorking() {
 		return readyForWorking;
 	}
-	public void setReadyForWorking(int readyForWorking) {
+	public void setReadyForWorking(boolean readyForWorking) {
 		this.readyForWorking = readyForWorking;
 	}
 	public float getPrice() {
@@ -47,7 +47,7 @@ public class WorkingDog extends Dog {
 	private String trainer;
 	
 	@Column(name = "readyforworking")
-	private int readyForWorking;
+	private boolean readyForWorking;
 	
 	@Column(name = "price")
 	private float price;

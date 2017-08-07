@@ -35,10 +35,10 @@ public class BreedingDog extends Dog {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	public int getReadyForSell() {
+	public boolean getReadyForSell() {
 		return readyForSell;
 	}
-	public void setReadyForSell(int readyForSell) {
+	public void setReadyForSell(boolean readyForSell) {
 		this.readyForSell = readyForSell;
 	}
 	public int getPuppyAccount() {
@@ -67,7 +67,7 @@ public class BreedingDog extends Dog {
 	private float price;
 	
 	@Column(name = "readyforsell")
-	private int readyForSell;
+	private boolean readyForSell;
 	
 	@Column(name = "puppyaccount")
 	private int puppyAccount;

@@ -53,6 +53,8 @@ dependencies {
         [group: 'org.eclipse.persistence', name: 'javax.persistence', version: '2.1.0'],
         [group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.11.6.RELEASE'],
         [group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.10.Final'],
-        [group: 'mysql', name: 'mysql-connector-java', version: '5.1.13']
+        [group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'],
+        [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'],
+        [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.0']
     )
 }

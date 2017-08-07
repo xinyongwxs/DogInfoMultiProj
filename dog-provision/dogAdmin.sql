@@ -16,7 +16,7 @@ DROP TABLE IF EXISTS `dog`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `dog` (
-  `id` INT COLLATE utf8_unicode_ci NOT NULL,
+  `id` INT COLLATE utf8_unicode_ci NOT NULL AUTO_INCREMENT,
   `epdate` datetime DEFAULT NULL,
   `chipid` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `earid` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -37,11 +37,11 @@ CREATE TABLE `breedingdog` (
   `matingdate` datetime DEFAULT NULL,
   `puppybirthday` datetime DEFAULT NULL,
   `feeder` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `readyforsell` int(11) DEFAULT NULL,
-  `price` int(11) DEFAULT NULL,
+  `readyforsell` BOOLEAN DEFAULT NULL,
+  `price` FLOAT DEFAULT NULL,
   `puppyaccount` int(11) DEFAULT NULL,
   `category` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   foreign key (`id`)
   references dog (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -91,10 +91,10 @@ CREATE TABLE `petdog` (
   `trainer` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `breeder` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `apperance` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `readyforsell` int(11) DEFAULT NULL,
+  `readyforsell` BOOLEAN DEFAULT NULL,
   `price` float DEFAULT NULL,
   `category` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   foreign key (`id`)
   references dog (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -117,7 +117,7 @@ CREATE TABLE `trainingdog` (
   `startdate` datetime DEFAULT NULL,
   `enddate` datetime DEFAULT NULL,
   `ownerid` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   foreign key (`id`)
   references dog (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -149,10 +149,10 @@ CREATE TABLE `workingdog` (
   `id` INT COLLATE utf8_unicode_ci NOT NULL,
   `traininglevel` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `trainer` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `readyforworking` int(11) DEFAULT NULL,
+  `readyforworking` BOOLEAN DEFAULT NULL,
   `price` float DEFAULT NULL,
   `category` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
   foreign key (`id`)
   references dog (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
