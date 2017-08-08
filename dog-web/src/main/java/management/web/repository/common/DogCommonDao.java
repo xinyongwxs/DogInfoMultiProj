@@ -45,7 +45,7 @@ public class DogCommonDao<T> {
 			queryStr = String.format(queryStr, args.toArray());
 		}
 		
-		if (!orderByName.equals(null) && !sortMethod.equals(null)) {
+		if (!orderByName.equals(null) && !sortMethod.equals(null) && (sortMethod.equals("asc") || sortMethod.equals("desc"))) {
 			queryStr = String.format(queryStr + " order by %s %s", orderByName, sortMethod);
 		}
 		

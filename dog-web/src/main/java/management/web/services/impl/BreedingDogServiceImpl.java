@@ -39,6 +39,7 @@ public class BreedingDogServiceImpl implements DogService<BreedingDog> {
 	}
 
 	@Override
+	@Transactional
 	public List<BreedingDog> getAllByFilter(Integer limit, Integer offset, Map<String, Object> filter,
 			String orderByName, String sortMethod) {
 		List<BreedingDog> result = breedingDogRepository.getLimitItems(limit, offset, filter, orderByName, sortMethod);

@@ -5,6 +5,6 @@ import java.util.Map;
 
 import management.web.enitity.BreedingDog;
 
-public interface CustomRepository {
-	List<BreedingDog> getLimitItems(Integer limit, Integer offset, Map<String, Object> filter, String orderByName, String sortMethod);
+public interface CustomRepository<T> {
+	List<T> getLimitItems(Integer limit, Integer offset, Map<String, Object> filter, String orderByName, String sortMethod);
 }
