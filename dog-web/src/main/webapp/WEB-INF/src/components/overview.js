@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
+import DogStore from "./stores/DogStore";
 
 
 export default class overview extends React.Component {
@@ -29,6 +30,20 @@ export default class overview extends React.Component {
 		        }}
 		    />
 		);
+	}
+
+	componentDidMount() {
+		
+	}
+
+	componentWillMount() {
+		DogStore.addChangeListener(this.handleDogData.bind(this));
+	}
+
+	handleDogData(data) {
+		var currState = Object.assign({}, this.state);
+		currState.data = data;
+		this.setState(currState);
 	}
 
 	render() {
