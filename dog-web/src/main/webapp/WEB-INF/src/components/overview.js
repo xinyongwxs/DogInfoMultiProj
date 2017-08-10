@@ -1,8 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
 import ReactTable from "react-table";
-import "react-table/react-table.css";
-import DogStore from "./stores/DogStore";
+// import "react-table/react-table.css";
+import DogStore from "../stores/DogStore";
+import DogActionCreators from "../actions/DogActionCreators";
 
 
 export default class overview extends React.Component {
@@ -25,7 +26,7 @@ export default class overview extends React.Component {
 		        	data[cellInfo.index][cellInfo.column.id] = e.target.innerHTML;
 		        	this.setState({ data });
 		        }}
-		        datngerouslySetInnerHTML={{
+		        dangerouslySetInnerHTML={{
 		        	__html: this.state.data[cellInfo.index][cellInfo.column.id]
 		        }}
 		    />
@@ -38,6 +39,7 @@ export default class overview extends React.Component {
 
 	componentWillMount() {
 		DogStore.addChangeListener(this.handleDogData.bind(this));
+		DogActionCreators.getDogData("breedingdog");
 	}
 
 	handleDogData(data) {

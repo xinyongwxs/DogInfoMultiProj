@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import management.web.enitity.PetDog;
@@ -11,6 +12,7 @@ import management.web.enitity.TrainingDog;
 import management.web.repository.PetDogRepository;
 import management.web.services.DogService;
 
+@Service
 public class PetDogServiceImpl implements DogService<PetDog> {
 	@Autowired
 	private PetDogRepository petDogRepository;

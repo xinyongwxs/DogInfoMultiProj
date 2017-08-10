@@ -5,7 +5,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 var DogStore = Object.assign({}, EventEmitter.prototype, {
 	loadDogData: function(data) {
 		this.emitChange(data);
-	}
+	},
 	emitChange: function(param) {
 		this.emit("change", param);
 	},

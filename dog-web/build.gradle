@@ -35,6 +35,13 @@ eclipse {
 	}
 }
 
+war {
+	rootSpec.exclude('**/node_modules/*')
+	rootSpec.exclude('**/src/*')
+	rootSpec.exclude('**/package.json')
+	rootSpec.exclude('**/webpack.config.js')
+}
+
 
 dependencies {
     compile 'commons-codec:commons-codec:1.5'

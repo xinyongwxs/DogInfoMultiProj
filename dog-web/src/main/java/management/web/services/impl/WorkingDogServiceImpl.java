@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import management.web.enitity.WorkingDog;
 import management.web.repository.WorkingDogRepository;
 import management.web.services.DogService;
 
+@Service
 public class WorkingDogServiceImpl implements DogService<WorkingDog> {
 	
 	@Autowired

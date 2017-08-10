@@ -6,8 +6,8 @@ module.exports = {
     cache: true,
     debug: true,
     output: {
-        path: __dirname,
-        filename: './dist/bundle.js'
+        path: path.resolve(__dirname, "dist"),
+        filename: 'bundle.js'
     },
     module: {
         loaders: [

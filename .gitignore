@@ -2,3 +2,5 @@ node_modules/
 bin/
 build/
 .gradle/
+bundle.js
+bundle.js.map

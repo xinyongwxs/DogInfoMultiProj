@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch -d"
+    "watch": "webpack --watch -d",
+    "production": "webpack -p",
+    "package": "webpack src/app.js dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,9 @@
   "homepage": "https://github.com/xinyongwxs/DogInfoMultiProj#readme",
   "devDependencies": {
     "babel-loader": "^7.1.1",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
