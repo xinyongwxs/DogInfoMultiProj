@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/xinyongwxs/DogInfoMultiProj#readme",
   "devDependencies": {
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^6.0.0",
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.16.2"

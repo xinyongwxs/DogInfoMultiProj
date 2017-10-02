@@ -56,13 +56,18 @@ export default class overview extends React.Component {
 					data={data}
 					column={[
 			            {
-			              Header: "First Name",
-			              accessor: "firstName",
+			              Header: "Name",
+			              accessor: "Name",
 			              Cell: this.renderEditable
 			            },
 			            {
-			              Header: "Last Name",
-			              accessor: "lastName",
+			              Header: "Birthday",
+			              accessor: "Birthday",
+			              Cell: this.renderEditable
+			            },
+			            {
+			              Header: "Kennel Id",
+			              accessor: "KennelId",
 			              Cell: this.renderEditable
 			            },
 			            {
